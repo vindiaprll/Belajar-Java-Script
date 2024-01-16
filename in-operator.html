@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+</head>
+<body>
+    <script>
+        const person = {
+            newname: "vindi",
+            lastname: "aprilia"
+        };
+
+        if("firstname" in person){
+            alert(`hello ${person.firstname}`);
+        }else{
+            alert("hello");
+        }
+
+        //in operator hanya bisa untuk mengecek apakah sebuah property atau index ada / tidak
+        //jika nilai null atau undifined dianggap ada
+        const student = {
+            name : "vindi aprilia",
+            callname : undefined,
+            nim : 2131407071132
+        };
+
+        if("callname" in student){
+            alert(`haloo ${student.callname}`);
+        }else{
+            alert("haloo student");
+        }
+
+        //conoth array
+        const name = [null, "vindi", null];
+        const result = 0 in name;
+        document.writeln(`${result}`); //true
+    </script>
+</body>
+</html>

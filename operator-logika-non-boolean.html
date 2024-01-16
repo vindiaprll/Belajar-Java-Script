@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator logika non bolean</title>
+</head>
+<body>
+    <script>
+        console.log("hallo" || "");
+        console.log("" || 2);
+        console.log(null || 2);
+
+        //biasanya digukana untuk mengambil salah satu data
+        //contohnya
+
+        const person = {
+            firstname : "",
+            lastname : "Dewi"
+        };
+
+        let name = person.firstname || person.lastname;
+        document.writeln(`${name}`);
+    </script>
+</body>
+</html>

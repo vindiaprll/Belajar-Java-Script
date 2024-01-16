@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ternary operator</title>
+</head>
+<body>
+    <script>
+        const nilai = 70;
+        let ucapan; // tidak bisa di set const karena dipakai dua kali di if else nya
+
+        if(nilai > 70){
+            ucapan = "selamat anda lulus";
+        }else{
+            ucapan = "anda tidak lulus";
+        }
+
+        document.writeln(`${ucapan}`);
+
+        //untuk meyederhanakan baris di atas maka bisa menggunakan ternary operator
+
+        const angka = 100;
+        const beri_salam = angka >= 70 ? "selamat anda lulus" : "anda belum lulus";
+
+        document.writeln(`${beri_salam}`);
+    </script>
+</body>
+</html>
