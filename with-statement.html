@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>with statement</title>
+</head>
+<body>
+    <script>
+        const person ={
+            firstname : "vindi",
+            lastname : "aprilia"
+        }
+
+    console.log(person.firstname);
+
+    //untuk menyederhanakan baris di atas maka bisa menggunakan with statement
+
+    with(person){
+        console.log(firstname);
+        console.log(lastname);
+    }
+    </script>
+</body>
+</html>
