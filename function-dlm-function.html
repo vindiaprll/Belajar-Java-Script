@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function dalam function</title>
+</head>
+<body>
+    <script>
+        function outer(){
+
+            function inner(){
+                console.log("vindi");
+            }
+
+            //dpt di pangil di dalam function
+
+            inner();
+            inner();
+        }
+
+        outer();
+
+        //tidak bisa di panggil akan eror
+        inner();
+    </script>
+</body>
+</html>
