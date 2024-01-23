@@ -25,12 +25,18 @@
 
         function first(){
             //local scope first
-            let variableFirst = ("first");
-            console.log(`${variableFirst}`);
+            let variableFirst = "first";
+            // console.log(`${variableFirst}`);
+
+            function fisrtNested(){
+                console.info(variableFirst);
+            }
+
+            fisrtNested();
         }
 
-        first();
-        console.log(`${variableFirst}`);//erorr
+        // first();
+        // console.log(`${variableFirst}`);//erorr
     </script>
 </body>
 </html>

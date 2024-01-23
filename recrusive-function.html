@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrusive Function</title>
+</head>
+<body>
+    <script>
+        function factorial(value){
+            let result = 1;
+            for( let i = 1; i <= value; i++ ){
+                result *= i;
+            }
+
+            return result;
+        }
+
+        console.log(factorial(5));
+        console.log(1*2*3*4*5);
+
+        //recrusive fungsion memanggil functionnya sendiri
+        function factorialRecrusive(value){
+            if(value === 1){
+                return 1;
+            }else{
+                return value * factorialRecrusive(value-1);
+            }
+        }
+
+        console.log(factorialRecrusive(5));
+        factorialRecrusive(5);
+        //5 * factorialrecrusive(4)
+        // 5 * 4 * factorialRecrusive(3)
+        // 5 * 4 * 3 factorialRecrusive(2)
+        // 5 * 4 * 3 * 2 factorialRecrusive(1)
+        // 5 * 4 * 3 * 2 * 1
+    </script>
+</body>
+</html>

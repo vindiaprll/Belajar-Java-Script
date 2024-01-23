@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        //penulian arrow function menggunkan => 
+
+        const sayHello = (nama) => {
+            const say = `hello ${nama}`;
+            console.info(say);
+        }
+
+        sayHello("vindi aprilia dewr");
+
+        //jika tidak function sederhana tidak membutuhkan blok kode maka
+        // bisa ditulisakan sepeti berikut ini
+
+        const names = (nama) => console.info(`hallo ${nama}`);
+        names("adam yuuui");
+
+        //arrow function tanpa kurung tutup, diguanakn jika ada satu parameter saja
+
+        const mahasiswa = namaSiswa => console.info(`halo mahasiswa ${namaSiswa}`);
+        mahasiswa("budiii")
+
+        //arrow function return value
+
+        const sum = (first, second) => first + second;
+
+        console.log(sum(10,10)); 
+
+        //arrow function sebagai parameter
+        
+    </script>
+</body>
+</html>
